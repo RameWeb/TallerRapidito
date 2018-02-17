@@ -7,7 +7,6 @@ const connect = require('gulp-connect');
 const nodemon = require('gulp-nodemon');
 const browserSync = require('browser-sync').create();
 
-
 // Se crea una tarea que conecta el servidor, con la ruta que va a conectar
 gulp.task('connect', () => {
   connect.server({
@@ -88,6 +87,6 @@ gulp.task('watch', () => {
 // Tarea global que llama todas las tareas
 gulp.task('default', ['connect','dependencies','html','css','js','watch'], () =>{
   browserSync.init({
-    server:'./public'
+    server: './public'
   })
 });
