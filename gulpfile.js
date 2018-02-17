@@ -87,6 +87,6 @@ gulp.task('watch', () => {
 // Tarea global que llama todas las tareas
 gulp.task('default', ['connect','dependencies','html','css','js','watch'], () =>{
   browserSync.init({
-    server: './public'
+    server:'./public'
   })
 });
